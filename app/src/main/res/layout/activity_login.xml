@@ -8,7 +8,7 @@
 
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/registrationImage"
+        android:id="@+id/loginImage"
         android:layout_width="318dp"
         android:layout_height="293dp"
         android:src="@drawable/undraw_create_re_57a3"

@@ -7,4 +7,5 @@
         <item name="android:enabled">true</item>
         <item name="hintTextColor">@color/hintColor</item>
     </style>
+
 </resources>

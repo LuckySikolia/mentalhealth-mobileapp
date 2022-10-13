@@ -6,6 +6,9 @@
     <string name="password">Password</string>
 
     <string name="alternativeSignOn">or continue with</string>
-    <string name="login">Log in</string>
+    <string name="login">LOGIN</string>
     <string name="signIn">Register</string>
+    <string name="registrationHeader">Create Account</string>
+    <string name="registrationSubHeader">Fill in the fields to register your account</string>
+    <string name="registrationRedirect">Already have an account?</string>
 </resources>
