@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "642670627947",
+    "project_id": "wental",
+    "storage_bucket": "wental.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:642670627947:android:55231e231dfbe216dcf52e",
+        "android_client_info": {
+          "package_name": "com.example.wental"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "642670627947-toojsc2l257deupu0bvhh1rbr5g10935.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCp519y-wQE4GvWZDlyUDDzERoRUDPJJ5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "642670627947-toojsc2l257deupu0bvhh1rbr5g10935.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

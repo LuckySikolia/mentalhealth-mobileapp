@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="TextInputLayoutStyle">
+        <item name="boxBackgroundColor">@color/grey</item>
+        <item name="boxCornerRadiusTopEnd">10dp</item>
+        <item name="boxCornerRadiusTopStart">10dp</item>
+        <item name="android:enabled">true</item>
+        <item name="hintTextColor">@color/hintColor</item>
+    </style>
+</resources>
