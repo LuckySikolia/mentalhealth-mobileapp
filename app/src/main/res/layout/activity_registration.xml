@@ -16,24 +16,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
+
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/regHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
         android:text="@string/registrationHeader"
         android:textSize="@dimen/headerSize"
         android:textStyle="bold"
-        android:gravity="center"
-        android:layout_margin="15dp"
-        app:layout_constraintBottom_toTopOf="@id/regSubHeader"/>
-
+        app:layout_constraintBottom_toTopOf="@id/regSubHeader"
+        tools:layout_editor_absoluteX="15dp" />
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/regSubHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
-        android:layout_marginBottom="228dp"
+        android:layout_marginBottom="20dp"
         android:gravity="center"
         android:text="@string/registrationSubHeader"
         android:textSize="@dimen/subheaderSize"
