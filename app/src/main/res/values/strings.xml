@@ -12,5 +12,5 @@
     <string name="registrationSubHeader">Fill in the fields to register your account</string>
     <string name="registrationRedirect">Already have an account? Login</string>
     <string name="LoginHeaderText">Welcome Back</string>
-    <string name="loginRedirect">Don't have an account? Register</string>
+    <string name="loginRedirect">Don\'t have an account? Register</string>
 </resources>
