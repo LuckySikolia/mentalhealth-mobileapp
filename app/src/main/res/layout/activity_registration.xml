@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="30dp"
+    android:layout_margin="25dp"
     tools:context=".Registration">
 
     <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/registrationImage"
-        android:layout_width="311dp"
-        android:layout_height="258dp"
+        android:layout_width="336dp"
+        android:layout_height="252dp"
         android:src="@drawable/undraw_create_re_57a3"
         app:layout_constraintBottom_toTopOf="@id/regHeader"
         app:layout_constraintEnd_toEndOf="parent"
@@ -19,109 +19,111 @@
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/regHeader"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:layout_marginBottom="12dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="15dp"
         android:gravity="center"
         android:text="@string/registrationHeader"
         android:textSize="@dimen/headerSize"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/regSubHeader"
-        tools:layout_editor_absoluteX="15dp" />
-
-    <com.google.android.material.textview.MaterialTextView
-        android:id="@+id/regSubHeader"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="20dp"
-        android:gravity="center"
-        android:text="@string/registrationSubHeader"
-        android:textSize="@dimen/subheaderSize"
-        app:layout_constraintBottom_toTopOf="@id/Username"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registrationImage" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/Username"
+        style="@style/TextInputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/user_name"
-        android:layout_marginTop="20dp"
         android:layout_margin="15dp"
-        style="@style/TextInputLayoutStyle"
+        android:layout_marginTop="30dp"
+        android:hint="@string/user_name"
+        app:boxStrokeColor="@color/orangeDark"
+        app:hintTextColor="@color/orangeDark"
         app:layout_constraintTop_toBottomOf="@id/regHeader">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/UsernameET"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:textColorHint="#546E7A" />
+            android:textColorHint="@color/orangeDark" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/Email"
+        style="@style/TextInputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_margin="15dp"
+        android:layout_marginTop="5dp"
         android:hint="@string/email"
-        style="@style/TextInputLayoutStyle"
+        app:boxStrokeColor="@color/orangeDark"
+        app:hintTextColor="@color/orangeDark"
         app:layout_constraintTop_toBottomOf="@id/Username">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/EmailET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColorHint="#546E7A" />
+            android:textColorHint="@color/orangeDark" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/Password"
+        style="@style/TextInputLayoutStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
         android:hint="@string/password"
-        style="@style/TextInputLayoutStyle"
-        app:endIconMode="password_toggle"
         app:counterEnabled="true"
         app:counterMaxLength="8"
+        app:endIconMode="password_toggle"
+        app:boxStrokeColor="@color/orangeDark"
+        app:hintTextColor="@color/orangeDark"
+        app:passwordToggleEnabled="true"
         app:layout_constraintTop_toBottomOf="@id/Email">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/PasswordET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:textColorHint="@color/orangeDark"/>
 
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/registerContainedButton"
+        android:layout_width="273dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/rounded_corners"
+        android:text="@string/signIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Password" />
+
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/regSubHeader1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"
-        android:layout_marginTop="8dp"
-        android:gravity="center"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="232dp"
+        android:gravity="center_horizontal"
         android:text="@string/registrationRedirect"
         android:textSize="@dimen/subheaderSize"
-        app:layout_constraintEnd_toStartOf="@+id/loginTextButton"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/Password"/>
-
-        <Button
-            android:id="@+id/loginTextButton"
-            style="@style/Widget.MaterialComponents.Button.TextButton"
-            android:layout_width="63dp"
-            android:layout_height="34dp"
-            android:layout_marginStart="-7dp"
-            android:layout_marginTop="8dp"
-            android:padding="0dp"
-            android:text="@string/login"
-            android:textSize="@dimen/subheaderSize"
-            app:layout_constraintStart_toEndOf="@+id/regSubHeader1"
-            app:layout_constraintTop_toBottomOf="@id/Password" />
-
+        app:layout_constraintTop_toBottomOf="@id/registerContainedButton" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
