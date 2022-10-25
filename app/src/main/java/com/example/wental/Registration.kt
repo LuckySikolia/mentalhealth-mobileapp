@@ -32,8 +32,8 @@ class Registration : AppCompatActivity() {
         //button action
         binding.registerContainedButton.setOnClickListener {
             //might have to remove the username feature if work around is not found
-           val username = binding.UsernameET.text.toString()
-            val email = binding.EmailET.text.toString()
+            val username = binding.UsernameET.text.toString()
+            val email = binding.EmailET.text.toString().trim()
             val pass = binding.PasswordET.text.toString()
 
             if (username.isNotEmpty() && email.isNotEmpty() && pass.isNotEmpty()) {
